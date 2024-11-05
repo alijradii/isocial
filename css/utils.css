@@ -1,0 +1,16 @@
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
