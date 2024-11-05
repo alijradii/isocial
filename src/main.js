@@ -88,7 +88,7 @@ gsap.utils.toArray(".reason").forEach((reason, index) => {
         start: "top 80%",
         toggleActions: "play none none none",
       },
-      delay: index * 0.2, // Delay for a cascading effect
+      delay: index * 0.2,
     },
   );
 });
