@@ -69,12 +69,26 @@ gsap.from(".service", {
   ease: "power3.out",
 });
 
-gsap.from(".reason", {
-  scrollTrigger: ".reason",
-  toggleActions: "play none none reset",
-  y: 1900,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.2,
-  ease: "power3.out",
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".reason").forEach((reason, index) => {
+  gsap.fromTo(
+    reason,
+    {
+      opacity: 0,
+      y: 30,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: reason,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+      delay: index * 0.2, // Delay for a cascading effect
+    },
+  );
 });
