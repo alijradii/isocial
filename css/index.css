@@ -10,12 +10,10 @@ body {
 }
 
 section {
-  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
 }
 
@@ -48,7 +46,13 @@ h1 {
 }
 
 .hero button:hover {
-  background-color: #21dadd;
+  background-color: #21ba88;
+}
+
+img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
 }
 
 nav {
@@ -56,12 +60,22 @@ nav {
   align-items: center;
 }
 
+nav > a {
+  margin: 20px;
+  max-width: 200px;
+}
+
+nav > a > img {
+  max-height: 120px;
+}
+
 .nav-items {
   flex: 1 1 0;
 }
 
 .nav-items {
+  max-width: 600px;
   font-size: 18px;
+  padding: 0 40px;
   justify-content: space-between;
-  padding: 20px;
 }
