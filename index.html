@@ -8,6 +8,8 @@
     <link href="css/utils.css" rel="stylesheet" />
     <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <link href="css/whyus.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   </head>
 
@@ -15,8 +17,8 @@
     <nav class="flex full-width">
       <a> <img src="./assets/images/isocial LOGO.png" alt="" /></a>
       <div class="nav-items flex noto-sans-regular" id="nav-items">
-        <a>Home</a>
-        <a>About</a>
+        <a href="#hero">Home</a>
+        <a href="#about">About </a>
         <a>Values</a>
         <a>Contact</a>
         <a>Bla Bla</a>
@@ -28,7 +30,7 @@
         <span class="bar"></span>
       </button>
     </nav>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-container">
         <h1 class="noto-sans-extrabold">
           <span>See Life</span>
@@ -42,7 +44,79 @@
       </div>
     </section>
 
-    r
+    <section class="about" id="about">
+      <div class="flex flex-col">
+        <h2 class="noto-sans-regular">We Transform Brands</h2>
+        <h2 class="noto-sans-regular">Into Digital Experiences</h2>
+      </div>
+
+      <div class="card-container">
+        <div class="card service" id="brandIdentity">
+          <h3>Brand Identity Development</h3>
+        </div>
+        <div class="card service" id="advertising">
+          <h3>Strategic Advertising</h3>
+        </div>
+        <div class="card service" id="visualizations">
+          <h3>3D & CGI Visualizations</h3>
+        </div>
+        <div class="card service" id="photography">
+          <h3>Professional Photography & Videography</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+      <h2 class="noto-sans-regular">Why Partner with Us?</h2>
+
+      <div class="reasons">
+        <div class="reason" id="industry">
+          <span class="icon">💼</span>
+          <h3>Industry Expertise</h3>
+          <p>
+            Our multidisciplinary team brings extensive experience across
+            various sectors, allowing us to understand and address your unique
+            challenges effectively.
+          </p>
+        </div>
+        <div class="reason" id="innovation">
+          <span class="icon">🚀</span>
+          <h3>Innovative Solutions</h3>
+          <p>
+            We stay ahead of the curve, utilizing the latest trends and
+            technologies to deliver creative strategies that drive results and
+            set your brand apart.
+          </p>
+        </div>
+        <div class="reason" id="dataDriven">
+          <span class="icon">📊</span>
+          <h3>Data-Driven Approach</h3>
+          <p>
+            We leverage analytics to inform our strategies, continuously
+            optimizing campaigns for maximum impact and ensuring you achieve
+            your business objectives.
+          </p>
+        </div>
+        <div class="reason" id="collaboration">
+          <span class="icon">🤝</span>
+          <h3>Collaborative Partnership</h3>
+          <p>
+            We view ourselves as an extension of your team, fostering open
+            communication and collaboration to ensure your vision guides every
+            project.
+          </p>
+        </div>
+        <div class="reason" id="results">
+          <span class="icon">🏆</span>
+          <h3>Results-Focused Mindset</h3>
+          <p>
+            Your success is our ultimate goal. We establish clear objectives and
+            KPIs for each initiative, focusing on delivering measurable outcomes
+            that contribute to your growth.
+          </p>
+        </div>
+      </div>
+    </section>
     <script src="src/main.js"></script>
   </body>
 </html>

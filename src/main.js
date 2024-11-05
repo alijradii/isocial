@@ -58,3 +58,23 @@ navbarToggle.addEventListener("click", () => {
     showSideNav();
   }
 });
+
+gsap.from(".service", {
+  scrollTrigger: ".service",
+  toggleActions: "play none none reset",
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.2,
+  ease: "power3.out",
+});
+
+gsap.from(".reason", {
+  scrollTrigger: ".reason",
+  toggleActions: "play none none reset",
+  y: 1900,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.2,
+  ease: "power3.out",
+});

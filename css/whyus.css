@@ -1,0 +1,54 @@
+.why-us {
+  padding: 3rem 2rem;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  opacity: 1;
+  gap: 2rem;
+}
+
+.reason {
+  flex: 1 1 0;
+  background-color: #272727;
+
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(30px);
+  transition: background-color 0.3s ease;
+}
+
+.reason:hover {
+  background-color: #333333;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 0.5rem;
+}
+
+.reason h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.reason p {
+  font-size: 1rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+}

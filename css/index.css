@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,14 +19,29 @@ section {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
+h3 {
+  font-family: "Noto Sans", sans-serif;
+}
 h1 {
   padding: 0;
   margin: 0;
+  font-family: "Noto Sans", sans-serif;
 }
 
+h2 {
+  font-size: 48px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
 .hero {
   min-height: 500px;
 }
@@ -68,7 +87,9 @@ img {
 nav {
   position: fixed;
   justify-content: space-between;
+  background-color: rgba(29, 29, 31, 0.8);
   align-items: center;
+  z-index: 99;
 }
 
 nav > a {
