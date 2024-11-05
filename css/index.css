@@ -14,14 +14,23 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
   height: 100vh;
 }
 
 h1 {
-  font-size: 64px;
+  padding: 0;
+  margin: 0;
 }
 
 .hero {
+  min-height: 500px;
+}
+
+.hero-container {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero h1 {
@@ -29,6 +38,7 @@ h1 {
   display: flex;
   line-height: 70px;
   letter-spacing: 2px;
+  font-size: 64px;
   flex-direction: column;
   justify-content: left;
 }
@@ -46,7 +56,7 @@ h1 {
 }
 
 .hero button:hover {
-  background-color: #21ba88;
+  background-color: #158182;
 }
 
 img {
@@ -56,26 +66,107 @@ img {
 }
 
 nav {
+  position: fixed;
   justify-content: space-between;
   align-items: center;
 }
 
 nav > a {
-  margin: 20px;
+  margin: 0 30px;
   max-width: 200px;
 }
 
 nav > a > img {
-  max-height: 120px;
+  min-width: 120px;
+  height: 120px;
 }
 
 .nav-items {
+  display: flex;
   flex: 1 1 0;
-}
-
-.nav-items {
   max-width: 600px;
   font-size: 18px;
   padding: 0 40px;
   justify-content: space-between;
+}
+
+.nav-items a {
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.nav-items a:hover {
+  color: #21dadb;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  background-color: transparent;
+  border: none;
+  margin: 40px;
+  font-size: 35px;
+  width: 30px;
+  height: 35px;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+@media (min-width: 700px) {
+  .nav-items {
+    opacity: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-items.active {
+    display: flex;
+    flex-direction: column;
+    background: rgba(33, 33, 33, 1);
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+  }
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero button {
+    font-size: 15px;
+  }
+
+  .hero-container {
+    margin-top: 80px;
+  }
 }
